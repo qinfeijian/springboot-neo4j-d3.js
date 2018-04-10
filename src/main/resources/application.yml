@@ -1,0 +1,29 @@
+server:
+  port: 8088
+
+spring:
+  data:
+    neo4j:
+      uri: http://192.168.1.81:7474
+      username: neo4j
+      password: root
+  datasource:
+      name: agrasset_gate
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://192.168.1.86:3306/agrasset?useUnicode=true&characterEncoding=UTF8&useSSL=false
+      username: root
+      password: Yfkj_5677511
+      #Yfkj_5677511
+      sqlScriptEncoding: UTF-8
+      
+  thymeleaf:
+      enabled: true
+      cache: false
+      check-template: true
+      check-template-location: true
+      content-type: text/html; charset=utf-8
+      encoding: UTF-8
+      mode: HTML
+      prefix: classpath:/templates/
+      suffix: .html 
